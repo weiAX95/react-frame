@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json.schemastore.org/swcrc",
+    "jsc": {
+        "parser": {
+            "syntax": "typescript",
+            "tsx": true,
+            "decorators": true,
+            "dynamicImport": true
+        },
+        "transform": {
+            "react": {
+                "runtime": "automatic",
+                "pragma": "React.createElement",
+                "pragmaFrag": "React.Fragment",
+                "throwIfNamespace": true,
+                "development": false,
+                "useBuiltins": true
+            },
+            "legacyDecorator": true,
+            "decoratorMetadata": true
+        },
+        "target": "es2016",
+        "loose": false,
+        "externalHelpers": false,
+        "keepClassNames": false
+    },
+    "module": {
+        "type": "es6",
+        "strict": true,
+        "strictMode": true,
+        "lazy": false,
+        "noInterop": false
+    },
+    "minify": true,
+    "sourceMaps": true,
+    "exclude": [
+        "node_modules",
+        ".*.spec.tsx?$",
+        ".*.test.tsx?$",
+        "./src/testing/.*",
+        "./**/tests/.*"
+    ],
+    "env": {
+        "targets": {
+            "chrome": "79",
+            "firefox": "73",
+            "safari": "13",
+            "edge": "79"
+        },
+        "mode": "usage",
+        "coreJs": "3.22"
+    }
+}
