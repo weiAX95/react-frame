@@ -19,16 +19,16 @@
             "legacyDecorator": true,
             "decoratorMetadata": true
         },
-        "target": "es2016",
-        "loose": false,
-        "externalHelpers": false,
-        "keepClassNames": false
+        "target": "es2022",
+        "loose": true,
+        "externalHelpers": true,
+        "keepClassNames": true
     },
     "module": {
         "type": "es6",
         "strict": true,
         "strictMode": true,
-        "lazy": false,
+        "lazy": true,
         "noInterop": false
     },
     "minify": true,

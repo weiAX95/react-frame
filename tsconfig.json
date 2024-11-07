@@ -6,6 +6,7 @@
             "dom.iterable",
             "esnext"
         ],
+        "allowImportingTsExtensions": false,
         "allowJs": true,
         "skipLibCheck": true,
         "esModuleInterop": true,
@@ -22,5 +23,17 @@
     },
     "include": [
         "src"
+    ],
+    "baseUrl": "src",
+    "paths": {
+        "@/*": [
+            "*"
+        ],
+        "@/components/": [
+            "components/*"
+        ],
+    },
+    "exclude": [
+        "node_modules"
     ]
 }

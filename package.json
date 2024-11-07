@@ -4,7 +4,11 @@
   "description": "learn",
   "main": "index.js",
   "scripts": {
+    "clent:dev": "webpack --mode development",
+    "clent:serve": "webpack serve --mode development",
+    "clent:prod": "webpack serve --mode production",
     "build": "webpack",
+    "start": "webpack serve",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,23 +20,35 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@swc/cli": "^0.5.0",
     "@swc/core": "^1.7.42",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^22.8.7",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@types/webpack": "^5.28.5",
     "autoprefixer": "^10.4.20",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
     "postcss": "^8.4.47",
     "postcss-import": "^16.1.0",
+    "postcss-loader": "^8.1.1",
     "postcss-nesting": "^13.0.1",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
-    "sass-loader": "^16.0.3",
-    "style-loader": "^4.0.0",
     "tailwindcss": "^3.4.14",
     "ts-loader": "^9.5.1",
     "typescript": "^5.6.3",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1",
+    "yargs-parser": "^21.1.1"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
   }
 }
