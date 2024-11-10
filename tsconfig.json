@@ -19,7 +19,11 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": false,
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "types": [
+            "node",
+            "@welldone-software/why-did-you-render"
+        ]
     },
     "include": [
         "src"

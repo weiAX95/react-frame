@@ -1,33 +1,57 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
+import React from 'react';
+import { useAdaptiveLayout } from '../hooks/useAdaptiveFontSize';
 
-interface AppProps {
-  title?: string; // 设置为可选属性
-}
+// 子组件
+const ChildComponent = React.memo(({ value }: { value: number }) => {
+  console.log('Child rendered with value:', value);
+  return <div>Value: {value}</div>
+});
 
-const App: React.FC<AppProps> = ({ title = 'React 18 App' }) => {
-  const [count, setCount] = useState<number>(0);
-  console.log('count', count);
+// ChildComponent.whyDidYouRender = true;
+const App = () => {
+  useAdaptiveLayout();
+  const [counter, setCounter] = useState(0);
+  // 使用一个对象状态来确保触发重渲染
+  const [, setTrigger] = useState({});
 
-  const handleClick = () => {
-    setCount((prev: number) => prev + 1); // 这里是正确的
-  };
+  const forceRerender = useCallback(() => {
+    // 创建新对象来确保状态更新
+    setTrigger({});
+  }, []);
+
+  console.log('App rendered');
+  console.log('(๑¯㉨¯๑)');
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">{title}</h1>
-      <div className="space-y-4">
-        <p className="text-gray-600">
-          当前计数: <span className="font-bold">{count}</span>
-        </p>
+    <div className="p-8 flex flex-col gap-4">
+      <ChildComponent value={counter} />
+
+      <div className="flex gap-4">
         <button
           className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          onClick={handleClick}
+          onClick={() => setCounter(c => c + 1)}
         >
-          增加计数
+          Increment ({counter})
         </button>
+
+        <button
+          className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+          onClick={forceRerender}
+        >
+          Force Rerender
+        </button>
+      </div>
+
+      <div className="text-gray-600">
+        打开控制台查看重渲染日志
       </div>
     </div>
   );
 };
+
+if (process.env.NODE_ENV === 'development') {
+  // App.whyDidYouRender = true;
+}
 
 export default App;
