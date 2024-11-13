@@ -1,18 +1,38 @@
-import "./why-did-you-render.ts";
-import React from 'react';
+import './why-did-you-render.ts';
+
 import { createRoot } from 'react-dom/client';
 
 import './style/globals.css';
 
-import App from './pages/App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import CssBaseline from '@mui/material/CssBaseline';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import routes from './routes';
+
+const router = createBrowserRouter(routes);
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    // primary: {
+    // main: '#ff5252',
+    // },
+  },
+  colorSchemes: {
+    dark: true,
+  },
+});
 
 const container = document.getElementById('app');
 if (!container) {
   throw new Error('container not found');
 }
-const root = createRoot(container!);
+const root = createRoot(container);
 root.render(
-  <React.StrictMode>
-    <App></App>
-  </React.StrictMode>
+  <ThemeProvider theme={darkTheme}>
+    <CssBaseline />
+    {/* <App></App> */}
+    <RouterProvider router={router} />
+  </ThemeProvider>
 );

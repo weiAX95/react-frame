@@ -12,7 +12,7 @@ interface AdaptiveLayoutOptions {
   debounceDelay?: number;
 }
 
-export function useAdaptiveLayout({
+export default function useAdaptiveLayout({
   designWidth = 1920,
   designHeight = 919,
   minWidth = 320,

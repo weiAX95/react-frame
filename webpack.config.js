@@ -1,18 +1,22 @@
 //  yargs-parser 解析命令行
-const argv = require('yargs-parser');
+const yargs = require('yargs-parser');
+
+const argv = yargs(process.argv.slice(2));
 
 // 判断是否是生成环境
 const mode = argv.mode || 'development';
 
 // 通过mode 引入config下的配置
 const _mergeConfig = require(`./config/webpack.${mode}.js`);
-// html-webpack-plugin
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const path = require('path');
 // merge
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+// const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const { ThemedProgressPlugin } = require('themed-progress-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 function resolve(dir) {
@@ -75,17 +79,30 @@ const baseConfig = {
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.css'],
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': resolve('src/'),
+      '@components': resolve('src/components'),
+      '@hooks': resolve('src/hooks'),
+      '@pages': resolve('src/pages'),
+      '@layouts': resolve('src/layouts'),
+      '@assets': resolve('src/assets'),
+      '@states': resolve('src/states'),
+      '@service': resolve('src/service'),
+      '@utils': resolve('src/utils'),
+      '@lib': resolve('src/lib'),
+      '@constants': resolve('src/constants'),
+      '@connectors': resolve('src/connectors'),
+      '@abis': resolve('src/abis'),
+      '@types': resolve('src/types'),
     },
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: isDevelopment ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: isDevelopment ? '[id].css' : '[id].[contenthash].css',
     }),
+    // new ProgressBarPlugin(),
+    new ThemedProgressPlugin(),
   ],
 };
 

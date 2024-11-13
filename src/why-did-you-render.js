@@ -1,3 +1,4 @@
+/* eslint-disable */
 /// <reference types="@welldone-software/why-did-you-render" />
 
 import React from 'react';
@@ -10,7 +11,6 @@ if (process.env.NODE_ENV === 'development') {
     trackHooks: true,
     logOnDifferentValues: true,
     collapseGroups: false,
-    include: [/^Child/, /^App/], // 明确指定要跟踪的组件
     logOwnerReasons: true,
     hotReloadBufferMs: 500,
     onlyLogs: true,
@@ -28,5 +28,5 @@ if (process.env.NODE_ENV === 'development') {
   });
 
   // 添加一些调试辅助
-  console.log('WDYR Configured in development mode');
+  // console.log('WDYR Configured in development mode');
 }
