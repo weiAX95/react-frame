@@ -32,7 +32,8 @@
     "rules": {
         // 这里可以添加自定义规则
         "react/react-in-jsx-scope": "off",
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "endOfLine": "auto"
     },
     "ignorePatterns": [
         "dist/",

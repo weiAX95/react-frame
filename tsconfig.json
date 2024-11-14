@@ -22,7 +22,8 @@
         "jsx": "react-jsx",
         "types": [
             "node",
-            "@welldone-software/why-did-you-render"
+            "@welldone-software/why-did-you-render",
+            "jest"
         ],
         "baseUrl": ".",
         "paths": {
