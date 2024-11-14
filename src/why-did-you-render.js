@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
     titleColor: 'green',
     diffNameColor: 'aqua',
     // 自定义更新原因通知
-    notifier: (event: { ComponentName: any; reason: any; prevProps: any; nextProps: any }) => {
+    notifier: event => {
       console.group('Why Did You Render');
       console.log('Component:', event.ComponentName);
       console.log('Why did it render?', event.reason);

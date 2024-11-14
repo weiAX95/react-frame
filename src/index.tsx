@@ -1,4 +1,4 @@
-import './why-did-you-render.ts';
+import './why-did-you-render.js';
 
 import { createRoot } from 'react-dom/client';
 

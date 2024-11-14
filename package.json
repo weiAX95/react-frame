@@ -7,16 +7,19 @@
     "clent:dev": "webpack --mode development",
     "clent:serve": "webpack serve --mode development",
     "clent:prod": "webpack  --mode production",
-    "build": "webpack",
     "start": "webpack serve",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
-    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "lint:staged": "lint-staged",
     "prepare": "husky",
     "test:uidiff": "backstop test",
-    "test:ui": "majestic"
+    "test:ui": "majestic",
+    "test:report": "jest --coverage --reporters=default --reporters=jest-stare",
+    "test": "jest --coverage",
+    "test:coverage": "jest --coverage --coverageReporters='text-summary' --coverageReporters='html'"
+  },
+  "jest-share": {
+    "resule": "docs/jest-stare"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +29,8 @@
     "@jest/globals": "^29.7.0",
     "@soda/friendly-errors-webpack-plugin": "^1.8.1",
     "@swc/cli": "^0.5.0",
-    "@swc/core": "^1.7.42",
+    "@swc/core": "^1.9.1",
+    "@swc/helpers": "^0.5.15",
     "@swc/jest": "^0.2.37",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.9",
@@ -55,6 +59,7 @@
     "html-webpack-plugin": "^5.6.3",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "jest-stare": "^2.5.2",
     "majestic": "^1.8.1",
     "mini-css-extract-plugin": "^2.9.2",
     "node-notifier": "^10.0.1",
@@ -68,6 +73,7 @@
     "style-loader": "^4.0.0",
     "tailwindcss": "^3.4.14",
     "themed-progress-plugin": "^1.0.1",
+    "ts-jest": "^29.2.5",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.96.1",
@@ -92,6 +98,7 @@
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^6.28.0",
-    "styled-components": "^6.1.13"
+    "styled-components": "^6.1.13",
+    "swc-loader": "^0.2.6"
   }
 }
