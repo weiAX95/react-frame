@@ -1,0 +1,367 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 2,
+  "numPassedTestSuites": 2,
+  "numPassedTests": 13,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 3,
+  "numTotalTests": 15,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1731573374761,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1731573379896,
+        "runtime": 1071,
+        "slow": false,
+        "start": 1731573378825
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "Z:\\work\\react-frame\\tests\\unit\\index.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "综合性测试"
+          ],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "综合性测试 简单的测试",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "简单的测试"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1731573379942,
+        "runtime": 1112,
+        "slow": false,
+        "start": 1731573378830
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "Z:\\work\\react-frame\\tests\\unit\\sum.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "sum"
+          ],
+          "duration": 14,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sum should return 0 for empty array",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return 0 for empty array"
+        },
+        {
+          "ancestorTitles": [
+            "sum"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sum should correctly sum numbers",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should correctly sum numbers"
+        },
+        {
+          "ancestorTitles": [
+            "sum"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sum should handle decimal numbers",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle decimal numbers"
+        },
+        {
+          "ancestorTitles": [
+            "sum"
+          ],
+          "duration": 21,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sum should throw error for non-number values",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should throw error for non-number values"
+        },
+        {
+          "ancestorTitles": [
+            "sum"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sum should handle single number array",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle single number array"
+        },
+        {
+          "ancestorTitles": [
+            "sum"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "sum should handle large numbers",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle large numbers"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 2,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1731573380344,
+        "runtime": 1540,
+        "slow": false,
+        "start": 1731573378804
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "Z:\\work\\react-frame\\tests\\unit\\address.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 11,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatAddress should format normal address",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should format normal address"
+        },
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatAddress should handle empty address",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle empty address"
+        },
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatAddress should handle short address",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle short address"
+        },
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatAddress should handle custom lengths",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle custom lengths"
+        },
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 5,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "0x12...5678",
+                "expected": "0x12345678",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x12\u001b[7m34\u001b[27m5678\"\u001b[39m\nReceived: \u001b[31m\"0x12\u001b[7m...\u001b[27m5678\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x12\u001b[7m34\u001b[27m5678\"\u001b[39m\nReceived: \u001b[31m\"0x12\u001b[7m...\u001b[27m5678\"\u001b[39m\n    at Object.toBe (Z:\\work\\react-frame\\tests\\unit\\address.spec.ts:24:47)\n    at Promise.then.completed (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-runner@29.7.0\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-runner@29.7.0\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-runner@29.7.0\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "formatAddress should handle address with exact length as prefix + suffix",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should handle address with exact length as prefix + suffix"
+        },
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatAddress should handle address shorter than prefix length",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle address shorter than prefix length"
+        },
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatAddress should handle zero prefix length",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle zero prefix length"
+        },
+        {
+          "ancestorTitles": [
+            "formatAddress"
+          ],
+          "duration": 1,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "0x12...0x1234567890",
+                "expected": "0x12...",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x12...\"\u001b[39m\nReceived: \u001b[31m\"0x12...\u001b[7m0x1234567890\u001b[27m\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x12...\"\u001b[39m\nReceived: \u001b[31m\"0x12...\u001b[7m0x1234567890\u001b[27m\"\u001b[39m\n    at Object.toBe (Z:\\work\\react-frame\\tests\\unit\\address.spec.ts:37:49)\n    at Promise.then.completed (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at _runTest (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-circus@29.7.0_babel-plugin-macros@3.1.0\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-runner@29.7.0\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-runner@29.7.0\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (Z:\\work\\react-frame\\node_modules\\.pnpm\\jest-runner@29.7.0\\node_modules\\jest-runner\\build\\testWorker.js:106:12)"
+          ],
+          "fullName": "formatAddress should handle zero suffix length",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should handle zero suffix length"
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatAddress › should handle address with exact length as prefix + suffix\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"0x12\u001b[7m34\u001b[27m5678\"\u001b[39m\n    Received: \u001b[31m\"0x12\u001b[7m...\u001b[27m5678\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 22 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 23 |\u001b[39m   it(\u001b[32m'should handle address with exact length as prefix + suffix'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 24 |\u001b[39m     expect(formatAddress(\u001b[32m'0x12345678'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m4\u001b[39m\u001b[33m,\u001b[39m \u001b[35m4\u001b[39m))\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x12345678'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 27 |\u001b[39m   \u001b[90m// 添加更多边界情况测试\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/address.spec.ts\u001b[39m\u001b[0m\u001b[2m:24:47)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatAddress › should handle zero suffix length\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"0x12...\"\u001b[39m\n    Received: \u001b[31m\"0x12...\u001b[7m0x1234567890\u001b[27m\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 35 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 36 |\u001b[39m   it(\u001b[32m'should handle zero suffix length'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 37 |\u001b[39m     expect(formatAddress(\u001b[32m'0x1234567890'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m4\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m))\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x12...'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 38 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 39 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 40 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/address.spec.ts\u001b[39m\u001b[0m\u001b[2m:37:49)\u001b[22m\u001b[2m\u001b[22m\n"
+    }
+  ],
+  "wasInterrupted": false
+}

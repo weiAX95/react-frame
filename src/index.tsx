@@ -1,4 +1,4 @@
-import './why-did-you-render.ts';
+import './why-did-you-render.js';
 
 import { createRoot } from 'react-dom/client';
 
@@ -14,13 +14,13 @@ const router = createBrowserRouter(routes);
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: 'light',
     // primary: {
     // main: '#ff5252',
     // },
   },
   colorSchemes: {
-    dark: true,
+    dark: false,
   },
 });
 

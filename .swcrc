@@ -19,35 +19,21 @@
             "legacyDecorator": true,
             "decoratorMetadata": true
         },
-        "target": "es2022",
+        // 移除 target
         "loose": true,
         "externalHelpers": true,
         "keepClassNames": true
     },
     "module": {
-        "type": "es6",
+        "type": "commonjs",
         "strict": true,
         "strictMode": true,
-        "lazy": true,
+        "lazy": false,
         "noInterop": false
     },
-    "minify": true,
+    "minify": false,
     "sourceMaps": true,
     "exclude": [
-        "node_modules",
-        ".*.spec.tsx?$",
-        ".*.test.tsx?$",
-        "./src/testing/.*",
-        "./**/tests/.*"
-    ],
-    "env": {
-        "targets": {
-            "chrome": "79",
-            "firefox": "73",
-            "safari": "13",
-            "edge": "79"
-        },
-        "mode": "usage",
-        "coreJs": "3.22"
-    }
+        "node_modules"
+    ]
 }

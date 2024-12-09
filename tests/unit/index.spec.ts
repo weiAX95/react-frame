@@ -1,5 +1,3 @@
-import { describe, expect, it } from '@jest/globals';
-
 // 或者
 describe('综合性测试', () => {
   it('简单的测试', () => {

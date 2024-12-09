@@ -6,11 +6,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  // entry: {
-  //   main: resolve(__dirname, '../src/index'),
-  // },
   output: {
-    publicPath: '/',
+    publicPath: './',
     path: join(__dirname, '../dist'),
     filename: 'scripts/[name].[contenthash:5].bundle.js',
     assetModuleFilename: 'images/[name].[contenthash:5][ext]',
@@ -59,9 +56,29 @@ module.exports = {
       },
     },
   },
+  stats: {
+    assets: true,
+    chunks: true,
+    modules: false,
+    children: false,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: resolve(__dirname, '../src/index-prod.html'),
+      filename: 'index.html', // 添加这行确保生成 index.html
+      inject: true, // 添加这行确保自动注入资源
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      },
     }),
   ],
 };
