@@ -1,1 +1,45 @@
-npm lint
+#!/bin/sh
+
+# 获取暂存的文件
+files=$(git diff --cached --name-only --diff-filter=ACMR | grep -E "\.(js|jsx|ts|tsx)$")
+
+# 如果没有需要提交的文件，直接退出
+if [ -z "$files" ]; then
+    exit 0
+fi
+
+echo "Running pre-commit checks..."
+
+# 运行 ESLint
+echo "Running ESLint..."
+npm run lint || {
+    echo "❌ ESLint 检查失败"
+    exit 1
+}
+
+# 运行 Prettier 格式化检查
+echo "Running Prettier..."
+npm run format:check || {
+    echo "❌ Prettier 检查失败"
+    echo "请运行 'npm run format' 来格式化代码"
+    exit 1
+}
+
+# TypeScript 类型检查
+echo "Running TypeScript check..."
+npm run type-check || {
+    echo "❌ TypeScript 类型检查失败"
+    exit 1
+}
+
+# 运行测试
+echo "Running tests..."
+npm run test || {
+    echo "❌ 测试失败"
+    exit 1
+}
+
+echo "✅ Pre-commit checks passed!"
+exit 0
+
+; npm lint
