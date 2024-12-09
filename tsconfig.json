@@ -41,7 +41,13 @@
             ],
             "@utils/*": [
                 "src/utils/*"
-            ]
+            ],
+            "@abis/*": [
+                "src/abis/*"
+            ],
+            "@connectors/*": [
+                "src/connectors/*"
+            ],
         }
     },
     "include": [

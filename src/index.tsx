@@ -14,13 +14,13 @@ const router = createBrowserRouter(routes);
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: 'light',
     // primary: {
     // main: '#ff5252',
     // },
   },
   colorSchemes: {
-    dark: true,
+    dark: false,
   },
 });
 

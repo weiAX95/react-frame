@@ -1,4 +1,11 @@
 // utils/sum.ts
+import { MetaMask } from '@web3-react/metamask';
+import type { Connector } from '@web3-react/types';
+
+export function getName(connector: Connector) {
+  if (connector instanceof MetaMask) return 'MetaMask';
+  return 'Unknown';
+}
 
 /**
  * 计算数组中所有数字的总和

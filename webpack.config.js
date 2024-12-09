@@ -18,6 +18,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const { ThemedProgressPlugin } = require('themed-progress-plugin');
 
+const Dotenv = require('dotenv-webpack');
+
 const isDevelopment = process.env.NODE_ENV !== 'production';
 function resolve(dir) {
   return path.join(__dirname, dir);
@@ -101,6 +103,7 @@ const baseConfig = {
       filename: isDevelopment ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: isDevelopment ? '[id].css' : '[id].[contenthash].css',
     }),
+    new Dotenv(),
     // new ProgressBarPlugin(),
     new ThemedProgressPlugin(),
   ],
